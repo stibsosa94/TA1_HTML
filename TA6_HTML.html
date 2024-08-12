@@ -7,16 +7,70 @@
 </head>
 <body>
     <form action="mi_formulario" method="post">
-        <label for="comida">Cual es tu comida favorita:</label>
-        <select name="comidas" id="selector_comida">
+        <fieldset>
+        <label for="comida">Cual es tu comida favorita:</label><br>
+        <select name="comidas" id="selector_comida" multiple>
             <option value="default">Elige una opcion:</option>
             <option value="arroz_pollo">Arroz con pollo</option>
             <option value="verduras">Verduras</option>
             <option value="asado">Asado</option>
             <option value="polenta">Polenta</option>
         </select>
+        </fieldset><br>
 
-        
+        <fieldset>
+        <label for="mascota">Cual estu mascota preferida:</label>
+        <select name="mascotas" id="selector_mascota" required>
+            <option value="default">Elige una opcion:</option>
+            <option value="gato">Gato</option>
+            <option value="perro">Perro</option>
+            <option value="hasmter">Hamster</option>
+            <option value="loro">Loro</option>
+        </select>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Cafe preferido</legend>
+            <p>
+              <input type="radio" name="size" id="size_1" value="capuccino" />
+              <label for="size_1">Capuccino</label>
+            
+              <input type="radio" name="size" id="size_2" value="late" />
+              <label for="size_2">Late</label>
+            
+              <input type="radio" name="size" id="size_3" value="americano" />
+              <label for="size_3">Americano</label>
+            </p>
+          </fieldset><br>
+
+          <fieldset>
+            <legend>Cafe preferido</legend>
+            <p>
+              <input type="radio" name="tipo" id="tipo_1" value="capuccino" />
+              <label for="tipo_1">Capuccino</label>
+            </p>
+            <p>
+              <input type="radio" name="tipo" id="tipo_2" value="late" />
+              <label for="tipo_2">Late</label>
+            </p>
+            <p>
+              <input type="radio" name="tipo" id="tipo_3" value="americano" />
+              <label for="tipo_3">Americano</label>
+            </p>
+          </fieldset><br>
+          
+        <fieldset>
+            <legend>Leyenda</legend>
+            <label for="nombre_etiqueta">Nombre etiqueta</label>
+          <p>
+            <input type="checkbox" id="numero1" name="numero1" value="uno" />
+            <label for="numero1">UNO</label>
+          </p>
+          <p>
+            <input type="checkbox" id="numero2" name="numero2" value="dos" />
+            <label for="numero2">DOS</label>
+          </p>
+        </fieldset>
     </form>
 </body>
 </html>
